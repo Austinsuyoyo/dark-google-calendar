@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name        Dark Google Calendar
-@namespace   pyxelr
+@namespace   austinsuyoyo
 @version     2.7.21
-@homepageURL https://github.com/pyxelr/dark-google-calendar
-@supportURL  https://github.com/pyxelr/dark-google-calendar/issues
-@updateURL   https://github.com/pyxelr/dark-google-calendar/raw/master/Google-DarkCalendar.user.css
+@homepageURL https://github.com/austinsuyoyo/dark-google-calendar
+@supportURL  https://github.com/austinsuyoyo/dark-google-calendar/issues
+@updateURL   https://github.com/austinsuyoyo/dark-google-calendar/raw/master/Google-DarkCalendar.user.css
 @license     MIT
-@author      pyxelr
+@author      austinsuyoyo
 
 @var color   font-color-all-day-events                     "Font color of all day events"                    #000000
 @var color   font-color-past-events-with-time              "Font color of past events with time"             #666666
@@ -314,18 +314,19 @@
     .KF4T6b.smECzc.UflSff.jKgTF.QGRmIf {
         color: var(--font-color-past-events-with-time) !important;
     }
-    
+
     /* Font of today's and future events */
     .KF4T6b {
         font-weight: 900!important;
         color: var(--font-color-all-day-events) !important;
     }
-    
+
     /* Font of events (in month view with time) */
-    .KF4T6b.qqMC3e,.KF4T6b.smECzc {
+    .KF4T6b.qqMC3e,
+    .KF4T6b.smECzc {
         color: var(--font-color-events-month-view-with-time) !important;
-    } 
-    
+    }
+
     /* Font of future events (in week view with time) */
     .Jmftzc.EiZ8Dd {
         color: var(--font-color-next-events-week-view-with-time);
@@ -403,34 +404,36 @@
 
     /* ==== FRAME ON GMAIL ==== */
     /* (Day view) Backround of top frame */
-    .cOoA8d, .a3b8ge {
+    .cOoA8d,
+    .a3b8ge {
         background: #fff;
         border-bottom: 1px solid #E2DFDB;
     }
-    
+
     /*  (Day view) Border color of top 2nd frame */
     .cBs4Te {
         border-bottom: 1px solid #CBC9C6;
     }
-    
+
     /*  (Day view) "Today" button frame */
     .VfPpkd-LgbsSe.VfPpkd-LgbsSe-OWXEXe-INsAgc.Rj2Mlf.OLiIxf.PDpWxe.P62QJc.LQeN7.ddoZCd.xYvThe {
         border: 1px solid #CBC9C6;
     }
-    
-     /* (Schedule view) Background color */
+
+    /* (Schedule view) Background color */
     .HrwHxb {
         filter: invert(100%) hue-rotate(180deg) brightness(1.1) saturate(120%) contrast(105%)!important;
         background: #191919 !important;
     }
-    
+
     /* (Schedule view) Background of "Create an event" */
     .GP8Q7c {
         background: #efefef
     }
-    
+
     /* (Schedule view) Font color */
-    .PnMPye, .q7uEid.gVNoLb.EiZ8Dd {
+    .PnMPye,
+    .q7uEid.gVNoLb.EiZ8Dd {
         color: black;
     }
 }
@@ -495,7 +498,7 @@
 
 @-moz-document regexp("(?=.*?\\/www.google.com)(?=.*?calendar.google.com).*") {
     /* Inversion of Google Map */
-    #pane img{
+    #pane img {
         filter: invert(100%) hue-rotate(180deg) brightness(1.1) contrast(105%)!important;
     }
 }
