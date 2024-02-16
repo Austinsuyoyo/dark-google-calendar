@@ -8,11 +8,12 @@
 @license     MIT
 @author      austinsuyoyo
 
-@var color   font-color-all-day-events                     "Font color of all day events"                    #000000
-@var color   font-color-past-events-with-time              "Font color of past events with time"             #666666
-@var color   font-color-events-month-view-with-time        "Font color of month view events with time"       #666666
-@var color   font-color-next-events-week-view-with-time    "Font color of next week view events with time"   #000000
-@var color   font-color-past-events-week-view-with-time    "Font color of past week view events with time"   #000000
+@var color   font-color-all-day-events                     "Font color of all day events"                    #FFF
+@var color   font-color-past-all-day-events                "Font color of past all day events"               #20212461
+@var color   font-color-past-events-with-time              "Font color of past events with time"             #e8eaed
+@var color   font-color-events-month-view-with-time        "Font color of month view events with time"       #e8eaed
+@var color   font-color-next-events-week-view-with-time    "Font color of next week view events with time"   #e8eaed
+@var color   font-color-past-events-week-view-with-time    "Font color of past week view events with time"   #e8eaed
 ==/UserStyle== */
 @-moz-document domain("calendar.google.com") {
     /* Invert the entire website */
@@ -320,7 +321,12 @@
         font-weight: 900!important;
         color: var(--font-color-all-day-events) !important;
     }
-
+        
+    /* Font of past all day events */
+    .KF4T6b.UflSff {
+        color: var(--font-color-past-all-day-events) !important;
+    }
+    
     /* Font of events (in month view with time) */
     .KF4T6b.qqMC3e,
     .KF4T6b.smECzc {
